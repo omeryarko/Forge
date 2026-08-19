@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
 <title>Forge — Pump Up Your Players</title>
-<meta name="description" content="A lightweight, plug-and-play prediction widget that keeps players playing — longer sessions, bigger deposits, more second deposits. Standalone or data-integrated, 0 PII to start."/>
+<meta name="description" content="Forge is an activation and retention tool that pumps your players into action by learning each player and personalizing every experience. More active players, longer play time."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"/>
 <style>
@@ -658,6 +658,28 @@ html:not(.js) .rgbar>div{width:72%}
   .pop.nojs{animation-duration:.85s !important}
   .pop.nojs .ring-fg{animation-duration:21s !important;animation-iteration-count:infinite !important}
 }
+
+/* ============================================================
+   LEAK BENTO · EXPANDABLE TILES
+   ============================================================ */
+.b-leak{cursor:pointer;transition:transform .25s ease,border-color .3s ease;position:relative;overflow:hidden}
+.b-leak::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--lime);transition:height .3s ease}
+.b-leak::after{content:'';position:absolute;top:0;left:0;right:0;height:80px;background:linear-gradient(to bottom,rgba(199,242,58,.05),transparent);opacity:0;transition:opacity .3s ease;pointer-events:none}
+.leak-detail{max-height:0;overflow:hidden;transition:max-height .4s ease,opacity .3s ease;opacity:0}
+.leak-detail .leak-row{display:flex;gap:10px;align-items:baseline;margin-top:10px}
+.leak-detail .leak-row:first-child{margin-top:16px;padding-top:16px;border-top:1px solid var(--line-soft)}
+.leak-detail .leak-label{font-family:var(--f-mono);font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);min-width:56px;flex-shrink:0;padding-top:2px}
+.leak-detail .leak-text{font-size:.85rem;color:var(--muted);line-height:1.55}
+.b-leak.expanded{border-color:rgba(199,242,58,.2)}
+.b-leak.expanded::before{height:3px}
+.b-leak.expanded::after{opacity:1}
+.b-leak.expanded .leak-detail{max-height:300px;opacity:1}
+@media(hover:hover){
+  .b-leak:hover{transform:translateY(-2px);border-color:rgba(199,242,58,.2)}
+  .b-leak:hover::before{height:3px}
+  .b-leak:hover::after{opacity:1}
+  .b-leak:hover .leak-detail{max-height:300px;opacity:1}
+}
 </style>
 <script>document.documentElement.classList.add('js')</script>
 <style>
@@ -808,22 +830,16 @@ html.js #rpView .rp-pkg.rp-active{display:block}
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <div class="badge glass fade-in" style="animation-delay:.1s"><span class="dot"></span>85% NEVER MAKE A SECOND DEPOSIT</div>
         <h1 style="margin-top:26px">
           <span class="w"><span style="--d:.15s"><em>Pump</em></span></span>
           <span class="w"><span style="--d:.26s"><em>up</em></span></span>
           <span class="w"><span style="--d:.37s">your</span></span>
           <span class="w"><span style="--d:.48s">players.</span></span>
         </h1>
-        <p class="lede fade-in" style="animation-delay:.7s">A lightweight, plug-and-play prediction widget that keeps your players hot — longer sessions, bigger deposits, more of them coming back. Standalone or data-integrated. Built to break the 85% second-deposit cliff.</p>
+        <p class="lede fade-in" style="animation-delay:.7s">Forge is an activation and retention tool that pumps your players into action by learning each player and personalizing every experience. The result is more active players and longer play time.</p>
         <div class="hero-actions fade-in" style="animation-delay:.85s">
           <a href="#cta" class="btn">Book a demo <span class="arc"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6h7M6 2l4 4-4 4" stroke="#C6F048" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
-          <a href="#shift" class="btn ghost">See how it works</a>
-        </div>
-        <div class="trust-row fade-in" style="animation-delay:1s">
-          <span>Longer <b>session time</b></span>
-          <span>Higher <b>deposits</b></span>
-          <span>Lower <b>churn</b></span>
+          <a href="#howitworks" class="btn ghost">See how it works</a>
         </div>
       </div>
       <div class="feedwrap fade-in" style="animation-delay:.5s">
@@ -845,15 +861,93 @@ html.js #rpView .rp-pkg.rp-active{display:block}
 
 <div class="divider"></div>
 
-<section id="problem">
+<!-- cliff section removed from homepage -->
+
+<!-- ============ HOW IT WORKS ============ -->
+<section id="howitworks">
   <div class="wrap">
-    <p class="eyebrow reveal">The cliff</p>
-    <h2 class="reveal">85% of the players you paid for never make a <em>second deposit</em>.</h2>
-    <p class="lede reveal">You spend to acquire them. They deposit once, take the welcome bonus, and go quiet. Most operators lose around 85% of first-time depositors before the second — the most expensive leak in iGaming.</p>
-    <div class="grid g3 reveal" data-stagger style="margin-top:52px">
-      <div class="card glass spot"><h3>Nothing pulls them back</h3><p>After the bonus there's no reason to return, and a next-day CRM email lands too late to matter.</p></div>
-      <div class="card glass spot"><h3>Gamification they have to learn</h3><p>Wheels, loot boxes and missions add a mechanic the player must figure out. Most never bother.</p></div>
-      <div class="card glass spot"><h3>One-size bonuses</h3><p>The same offer to everyone burns margin and moves no one.</p></div>
+    <p class="eyebrow reveal">How it works</p>
+    <h2 class="reveal">See everything. Act on <em>anything</em>.</h2>
+    <p class="lede reveal">Forge sits on your site and watches the full player journey. Every signal feeds a profile that sharpens over time. Every action pushes the player where you want them.</p>
+    <div class="grid g2 reveal" data-stagger style="margin-top:52px;gap:18px">
+      <div class="card glass spot">
+        <div class="badge glass" style="margin-bottom:14px;width:fit-content"><span class="dot"></span>1 &middot; SEE</div>
+        <h3>Every action, tracked</h3>
+        <p>Forge tracks every action a player takes. Pages, clicks, bets, deposits, cashier opens, exits. The full journey, not just what your platform reports.</p>
+      </div>
+      <div class="card glass spot">
+        <div class="badge glass" style="margin-bottom:14px;width:fit-content"><span class="dot"></span>2 &middot; LEARN</div>
+        <h3>A profile that sharpens</h3>
+        <p>Every visit builds the picture. Current state, playing habits, preferences. Forge learns each player and gets more accurate over time.</p>
+      </div>
+      <div class="card glass spot">
+        <div class="badge glass" style="margin-bottom:14px;width:fit-content"><span class="dot"></span>3 &middot; PERSONALIZE</div>
+        <h3>The right nudge, right now</h3>
+        <p>Based on what it learned, Forge picks the most suitable action for this player at this moment. Not a generic banner everyone sees. A nudge shaped by what it knows about them.</p>
+      </div>
+      <div class="card glass spot">
+        <div class="badge glass" style="margin-bottom:14px;width:fit-content"><span class="dot"></span>4 &middot; DIRECT</div>
+        <h3>Toward your chosen outcome</h3>
+        <p>Every nudge moves the player toward an outcome you set. Sign up, deposit, play, come back. You pick the destination.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============ WHERE FORGE ACTS ============ -->
+<section id="leaks">
+  <div class="wrap">
+    <p class="eyebrow reveal">Where Forge acts</p>
+    <h2 class="reveal">Leaks across the <em>entire journey</em>.</h2>
+    <p class="lede reveal">Every operator loses players at different stages. Here is where Forge steps in.</p>
+    <div class="bento reveal" data-stagger style="margin-top:52px">
+      <div class="b glass spot b-leak" style="grid-column:span 4" onclick="this.classList.toggle('expanded')">
+        <span class="tag" style="color:var(--cyan)">ONBOARDING</span>
+        <div><h3>Frictionless Sign-ups</h3><p class="muted" style="font-size:.88rem;margin-top:6px">A visitor lands on the site. Forge removes the login barrier.</p></div>
+        <div class="leak-detail">
+          <div class="leak-row"><span class="leak-label">Scenario</span><span class="leak-text">A new visitor arrives from an ad or referral. The registration form is the first wall they hit.</span></div>
+          <div class="leak-row"><span class="leak-label">Forge</span><span class="leak-text">Offers autologin so the visitor gets inside the site with zero friction.</span></div>
+          <div class="leak-row"><span class="leak-label">Result</span><span class="leak-text" style="color:var(--lime);font-weight:600">More visitors become registered players.</span></div>
+        </div>
+      </div>
+      <div class="b glass spot b-leak" style="grid-column:span 8" onclick="this.classList.toggle('expanded')">
+        <span class="tag" style="color:var(--ember)">ACTIVATION</span>
+        <div><h3>Drive Deposits</h3><p class="muted" style="font-size:.88rem;margin-top:6px">A player signs up but never puts money in. Forge incentivizes the first deposit while the player is still warm.</p></div>
+        <div class="leak-detail">
+          <div class="leak-row"><span class="leak-label">Scenario</span><span class="leak-text">The player registered, maybe browsed a few games, but closed the tab without depositing. Your acquisition cost is burned.</span></div>
+          <div class="leak-row"><span class="leak-label">Forge</span><span class="leak-text">Detects the zero-balance state and triggers a personalized deposit incentive matched to the player's browsing behavior.</span></div>
+          <div class="leak-row"><span class="leak-label">Result</span><span class="leak-text" style="color:var(--lime);font-weight:600">Higher first-deposit conversion. Lower wasted acquisition spend.</span></div>
+        </div>
+      </div>
+      <div class="b glass spot b-leak" style="grid-column:span 3" onclick="this.classList.toggle('expanded')">
+        <span class="tag" style="color:var(--lime)">ENGAGEMENT</span>
+        <div><h3>Play Momentum</h3><p class="muted" style="font-size:.88rem;margin-top:6px">A session is slowing down. Forge triggers a prediction game to pull the player back in.</p></div>
+        <div class="leak-detail">
+          <div class="leak-row"><span class="leak-label">Scenario</span><span class="leak-text">The player is browsing, not betting. Activity has dropped. One more idle minute and the tab closes.</span></div>
+          <div class="leak-row"><span class="leak-label">Forge</span><span class="leak-text">Reads the drop in activity and fires a timed prediction game matched to what the player was doing.</span></div>
+          <div class="leak-row"><span class="leak-label">Result</span><span class="leak-text" style="color:var(--lime);font-weight:600">Longer sessions. More bets per visit.</span></div>
+        </div>
+      </div>
+      <div class="b glass spot b-leak" style="grid-column:span 4" onclick="this.classList.toggle('expanded')">
+        <span class="tag" style="color:var(--amber)">REVENUE</span>
+        <div><h3>Margin Optimization</h3><p class="muted" style="font-size:.88rem;margin-top:6px">A player is active but on a low-margin product. Forge nudges them where your margin is higher.</p></div>
+        <div class="leak-detail">
+          <div class="leak-row"><span class="leak-label">Scenario</span><span class="leak-text">The player is betting on a game where your margin is thin, or using a provider that costs you more than others.</span></div>
+          <div class="leak-row"><span class="leak-label">Forge</span><span class="leak-text">Nudges the player toward higher-margin products or preferred providers without breaking the session flow.</span></div>
+          <div class="leak-row"><span class="leak-label">Result</span><span class="leak-text" style="color:var(--lime);font-weight:600">Higher revenue per active player.</span></div>
+        </div>
+      </div>
+      <div class="b glass spot b-leak" style="grid-column:span 5" onclick="this.classList.toggle('expanded')">
+        <span class="tag" style="color:var(--amber)">RETENTION</span>
+        <div><h3>Exit Prevention</h3><p class="muted" style="font-size:.88rem;margin-top:6px">A player clicks logout or starts a withdrawal. Forge catches the signal and offers a reason to stay.</p></div>
+        <div class="leak-detail">
+          <div class="leak-row"><span class="leak-label">Scenario</span><span class="leak-text">Logout click, withdrawal page, or zero balance. The player is one step from gone and won't get a follow-up email in time.</span></div>
+          <div class="leak-row"><span class="leak-label">Forge</span><span class="leak-text">Recognizes exit signals in real time and surfaces a tailored offer or prediction game before the player leaves.</span></div>
+          <div class="leak-row"><span class="leak-label">Result</span><span class="leak-text" style="color:var(--lime);font-weight:600">Lower churn at the point of exit.</span></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -1016,26 +1110,7 @@ html.js #rpView .rp-pkg.rp-active{display:block}
 
 <div class="divider"></div>
 
-<section id="trust">
-  <div class="wrap">
-    <p class="eyebrow reveal">Trust</p>
-    <h2 class="reveal">What good looks like.</h2>
-    <div class="reveal" data-stagger style="display:flex;gap:14px;flex-wrap:wrap;margin-top:36px">
-      <span class="chip">Tier-1 sportsbook</span>
-      <span class="chip">Multi-vertical casino group</span>
-      <span class="chip">Emerging trading operator</span>
-      <span class="chip">Prediction-market platform</span>
-    </div>
-    <div class="grid g4 reveal" data-stagger style="margin-top:48px">
-      <div class="stat glass spot"><div class="v">+<span class="count" data-to="31">31</span><span class="u">%</span></div><div class="k">30-day retention</div></div>
-      <div class="stat glass spot"><div class="v"><span class="count" data-to="2.4" data-dec="1">2.4</span><span class="u">&times;</span></div><div class="k">Reactivation rate</div></div>
-      <div class="stat glass spot"><div class="v">&minus;<span class="count" data-to="19">19</span><span class="u">%</span></div><div class="k">Churn, at-risk cohorts</div></div>
-      <div class="stat glass spot"><div class="v">&lt;<span class="count" data-to="1">1</span><span class="u">s</span></div><div class="k">Median latency</div></div>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
+<!-- trust section removed from homepage, saved for later -->
 
 <section id="voices">
   <div class="wrap">
@@ -1073,7 +1148,7 @@ html.js #rpView .rp-pkg.rp-active{display:block}
     <div><h4>Platform</h4><a href="platform.html#engine">The engine</a><a href="platform.html#console">Operator console</a><a href="platform.html#how">Go live</a><a href="platform.html#rollout">Rollout</a><a href="platform.html#integrations">Integrations</a><a href="index.html#capabilities">What it does</a><a href="index.html#privacy">Two ways to run it</a><a href="index.html#rg">Responsible gaming</a></div>
     <div><h4>Solutions</h4><a href="solutions.html">Casino</a><a href="solutions.html">Slots</a><a href="solutions.html">Sports Betting</a><a href="solutions.html">Trading</a><a href="solutions.html">Prediction Markets</a><a href="index.html#verticals">Native language</a><a href="index.html#verticals">Hyper-local predictions</a></div>
     <div><h4>Company</h4><a href="company.html">About</a><a href="pricing.html">Pricing</a><a href="index.html#cta">Contact</a><a href="index.html#cta">Book a demo</a></div>
-    <div><h4>Why Forge</h4><a href="why.html">The shift</a><a href="index.html#problem">The 85% cliff</a><a href="index.html#shift">Why predictions work</a><a href="index.html#verticals">Prediction on everything</a><a href="index.html#proof">Outcomes</a><a href="index.html#trust">What good looks like</a></div>
+    <div><h4>Why Forge</h4><a href="why.html">The shift</a><a href="index.html#proof">The 85% cliff</a><a href="index.html#shift">Why predictions work</a><a href="index.html#verticals">Prediction on everything</a><a href="index.html#proof">Outcomes</a><a href="index.html#voices">What good looks like</a></div>
   </div>
   <div class="signoff">
     <div class="bigwm" aria-hidden="true">FORGE</div>
@@ -1405,7 +1480,7 @@ document.querySelectorAll('.rp-step').forEach(function(step){
   var natives = {
     al: {tag:'LOCAL WEATHER MARKET · ALBANIAN', q:'A do të jetë temperatura në Tiranë mbi 26°C në orën e ardhshme?', tr:'EN · Will the temperature in Tirana be above 26°C in the next hour?', yes:'PO', no:'JO', dir:'ltr'},
     uk: {tag:'LOCAL POLITICS MARKET · ENGLISH', q:'Will Farage poll above 33% this week?', tr:'Generated from this player\u2019s home feed · UK polling', yes:'YES', no:'NO', dir:'ltr'},
-    ae: {tag:'LOCAL WEATHER MARKET · ARABIC', q:'هل ستتجاوز درجة الحرارة في دبي 40 درجة خلال الساعة القادمة؟', tr:'EN · Will the temperature in Dubai exceed 40°C in the next hour?', yes:'نعم', no:'لا', dir:'rtl'},
+    ae: {tag:'LOCAL WEATHER MARKET · ARABIC', q:'هل ستتجاوز درجة الحرارة فيدبي 40 درجة خلال الساعة القادمة؟', tr:'EN · Will the temperature in Dubai exceed 40°C in the next hour?', yes:'نعم', no:'لا', dir:'rtl'},
     es: {tag:'LOCAL SPORTS MARKET · SPANISH', q:'¿Habrá más de 2 goles en el derbi de esta noche?', tr:'EN · Will there be more than 2 goals in tonight\u2019s derby?', yes:'SÍ', no:'NO', dir:'ltr'},
     hi: {tag:'LOCAL CRICKET MARKET · HINDI', q:'क्या कोहली आज 50 से ज़्यादा रन बनाएंगे?', tr:'EN · Will Kohli score more than 50 runs today?', yes:'हाँ', no:'नहीं', dir:'ltr'},
     zh: {tag:'LOCAL WEATHER MARKET · MANDARIN', q:'明早上海会下雨吗？', tr:'EN · Will it rain in Shanghai tomorrow morning?', yes:'会', no:'不会', dir:'ltr'}
