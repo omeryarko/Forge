@@ -662,13 +662,19 @@ html:not(.js) .rgbar>div{width:72%}
 /* ============================================================
    LEAK BENTO · EXPANDABLE TILES
    ============================================================ */
-.b-leak{cursor:pointer;transition:transform .25s ease,border-color .3s ease;position:relative;overflow:hidden}
+.bento-leaks{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:auto;gap:16px}
+.b-leak{cursor:pointer;transition:transform .25s ease,border-color .3s ease;position:relative;overflow:hidden;
+  background:var(--glass);border:1px solid var(--line);border-radius:var(--r-lg);padding:24px 22px;display:flex;flex-direction:column}
 .b-leak::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--lime);transition:height .3s ease}
 .b-leak::after{content:'';position:absolute;top:0;left:0;right:0;height:80px;background:linear-gradient(to bottom,rgba(199,242,58,.05),transparent);opacity:0;transition:opacity .3s ease;pointer-events:none}
+.b-leak .tag{align-self:flex-start;font-family:var(--f-mono,var(--mono,'JetBrains Mono',monospace));font-size:10px;letter-spacing:.16em;padding:5px 11px;border-radius:100px;
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);margin-bottom:12px}
+.b-leak h3{font-size:1.05rem}
+.b-leak p{color:var(--muted);font-size:.88rem;margin-top:6px}
 .leak-detail{max-height:0;overflow:hidden;transition:max-height .4s ease,opacity .3s ease;opacity:0}
 .leak-detail .leak-row{display:flex;gap:10px;align-items:baseline;margin-top:10px}
 .leak-detail .leak-row:first-child{margin-top:16px;padding-top:16px;border-top:1px solid var(--line-soft)}
-.leak-detail .leak-label{font-family:var(--f-mono);font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);min-width:56px;flex-shrink:0;padding-top:2px}
+.leak-detail .leak-label{font-family:var(--f-mono,var(--mono,'JetBrains Mono',monospace));font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);min-width:56px;flex-shrink:0;padding-top:2px}
 .leak-detail .leak-text{font-size:.85rem;color:var(--muted);line-height:1.55}
 .b-leak.expanded{border-color:rgba(199,242,58,.2)}
 .b-leak.expanded::before{height:3px}
@@ -679,6 +685,13 @@ html:not(.js) .rgbar>div{width:72%}
   .b-leak:hover::before{height:3px}
   .b-leak:hover::after{opacity:1}
   .b-leak:hover .leak-detail{max-height:300px;opacity:1}
+}
+@media(max-width:900px){
+  .bento-leaks{grid-template-columns:repeat(2,1fr)}
+  .bento-leaks .b-leak{grid-column:span 1!important}
+}
+@media(max-width:600px){
+  .bento-leaks{grid-template-columns:1fr}
 }
 </style>
 <script>document.documentElement.classList.add('js')</script>
@@ -902,46 +915,51 @@ html.js #rpView .rp-pkg.rp-active{display:block}
     <p class="eyebrow reveal">Where Forge acts</p>
     <h2 class="reveal">Leaks across the <em>entire journey</em>.</h2>
     <p class="lede reveal">Every operator loses players at different stages. Here is where Forge steps in.</p>
-    <div class="bento reveal" data-stagger style="margin-top:52px">
-      <div class="b glass spot b-leak" style="grid-column:span 4" onclick="this.classList.toggle('expanded')">
+    <div class="bento-leaks reveal" data-stagger style="margin-top:52px">
+      <div class="b-leak" style="grid-column:span 4" onclick="this.classList.toggle('expanded')">
         <span class="tag" style="color:var(--cyan)">ONBOARDING</span>
-        <div><h3>Frictionless Sign-ups</h3><p class="muted" style="font-size:.88rem;margin-top:6px">A visitor lands on the site. Forge removes the login barrier.</p></div>
+        <h3>Frictionless Sign-ups</h3>
+        <p>A visitor lands on the site. Forge removes the login barrier.</p>
         <div class="leak-detail">
           <div class="leak-row"><span class="leak-label">Scenario</span><span class="leak-text">A new visitor arrives from an ad or referral. The registration form is the first wall they hit.</span></div>
           <div class="leak-row"><span class="leak-label">Forge</span><span class="leak-text">Offers autologin so the visitor gets inside the site with zero friction.</span></div>
           <div class="leak-row"><span class="leak-label">Result</span><span class="leak-text" style="color:var(--lime);font-weight:600">More visitors become registered players.</span></div>
         </div>
       </div>
-      <div class="b glass spot b-leak" style="grid-column:span 8" onclick="this.classList.toggle('expanded')">
+      <div class="b-leak" style="grid-column:span 8" onclick="this.classList.toggle('expanded')">
         <span class="tag" style="color:var(--ember)">ACTIVATION</span>
-        <div><h3>Drive Deposits</h3><p class="muted" style="font-size:.88rem;margin-top:6px">A player signs up but never puts money in. Forge incentivizes the first deposit while the player is still warm.</p></div>
+        <h3>Drive Deposits</h3>
+        <p>A player signs up but never puts money in. Forge incentivizes the first deposit while the player is still warm.</p>
         <div class="leak-detail">
           <div class="leak-row"><span class="leak-label">Scenario</span><span class="leak-text">The player registered, maybe browsed a few games, but closed the tab without depositing. Your acquisition cost is burned.</span></div>
           <div class="leak-row"><span class="leak-label">Forge</span><span class="leak-text">Detects the zero-balance state and triggers a personalized deposit incentive matched to the player's browsing behavior.</span></div>
           <div class="leak-row"><span class="leak-label">Result</span><span class="leak-text" style="color:var(--lime);font-weight:600">Higher first-deposit conversion. Lower wasted acquisition spend.</span></div>
         </div>
       </div>
-      <div class="b glass spot b-leak" style="grid-column:span 3" onclick="this.classList.toggle('expanded')">
+      <div class="b-leak" style="grid-column:span 3" onclick="this.classList.toggle('expanded')">
         <span class="tag" style="color:var(--lime)">ENGAGEMENT</span>
-        <div><h3>Play Momentum</h3><p class="muted" style="font-size:.88rem;margin-top:6px">A session is slowing down. Forge triggers a prediction game to pull the player back in.</p></div>
+        <h3>Play Momentum</h3>
+        <p>A session is slowing down. Forge triggers a prediction game to pull the player back in.</p>
         <div class="leak-detail">
           <div class="leak-row"><span class="leak-label">Scenario</span><span class="leak-text">The player is browsing, not betting. Activity has dropped. One more idle minute and the tab closes.</span></div>
           <div class="leak-row"><span class="leak-label">Forge</span><span class="leak-text">Reads the drop in activity and fires a timed prediction game matched to what the player was doing.</span></div>
           <div class="leak-row"><span class="leak-label">Result</span><span class="leak-text" style="color:var(--lime);font-weight:600">Longer sessions. More bets per visit.</span></div>
         </div>
       </div>
-      <div class="b glass spot b-leak" style="grid-column:span 4" onclick="this.classList.toggle('expanded')">
+      <div class="b-leak" style="grid-column:span 4" onclick="this.classList.toggle('expanded')">
         <span class="tag" style="color:var(--amber)">REVENUE</span>
-        <div><h3>Margin Optimization</h3><p class="muted" style="font-size:.88rem;margin-top:6px">A player is active but on a low-margin product. Forge nudges them where your margin is higher.</p></div>
+        <h3>Margin Optimization</h3>
+        <p>A player is active but on a low-margin product. Forge nudges them where your margin is higher.</p>
         <div class="leak-detail">
           <div class="leak-row"><span class="leak-label">Scenario</span><span class="leak-text">The player is betting on a game where your margin is thin, or using a provider that costs you more than others.</span></div>
           <div class="leak-row"><span class="leak-label">Forge</span><span class="leak-text">Nudges the player toward higher-margin products or preferred providers without breaking the session flow.</span></div>
           <div class="leak-row"><span class="leak-label">Result</span><span class="leak-text" style="color:var(--lime);font-weight:600">Higher revenue per active player.</span></div>
         </div>
       </div>
-      <div class="b glass spot b-leak" style="grid-column:span 5" onclick="this.classList.toggle('expanded')">
+      <div class="b-leak" style="grid-column:span 5" onclick="this.classList.toggle('expanded')">
         <span class="tag" style="color:var(--amber)">RETENTION</span>
-        <div><h3>Exit Prevention</h3><p class="muted" style="font-size:.88rem;margin-top:6px">A player clicks logout or starts a withdrawal. Forge catches the signal and offers a reason to stay.</p></div>
+        <h3>Exit Prevention</h3>
+        <p>A player clicks logout or starts a withdrawal. Forge catches the signal and offers a reason to stay.</p>
         <div class="leak-detail">
           <div class="leak-row"><span class="leak-label">Scenario</span><span class="leak-text">Logout click, withdrawal page, or zero balance. The player is one step from gone and won't get a follow-up email in time.</span></div>
           <div class="leak-row"><span class="leak-label">Forge</span><span class="leak-text">Recognizes exit signals in real time and surfaces a tailored offer or prediction game before the player leaves.</span></div>
