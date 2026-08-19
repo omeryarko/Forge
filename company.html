@@ -768,8 +768,7 @@ html.js #rpView .rp-pkg.rp-active{display:block}
 <div class="grain" aria-hidden="true"></div>
 <div class="progress" id="progress"></div>
 
-<style id="page-slim">
-#top,#trust,#problem,#shift,#engine,#console,#capabilities,#verticals,#privacy,#rg,#proof,#how,#rollout,#packages,#voices,#integrations{display:none!important}
+<style id="page-head">
 section h1{font-size:clamp(1.9rem,3.8vw,3rem);letter-spacing:-.02em;max-width:22ch;line-height:1.08}
 #origin{padding-top:clamp(150px,18vh,220px)}
 </style>
@@ -784,7 +783,7 @@ section h1{font-size:clamp(1.9rem,3.8vw,3rem);letter-spacing:-.02em;max-width:22
   <div class="links">
     <a href="platform.html" class="lk">Platform</a>
     <a href="solutions.html" class="lk">Solutions</a>
-    <a href="index.html#problem" class="lk">Why Forge</a>
+    <a href="why.html" class="lk">Why Forge</a>
     <a href="pricing.html" class="lk">Pricing</a>
     <a href="company.html" class="lk">Company</a>
   </div>
@@ -799,7 +798,7 @@ section h1{font-size:clamp(1.9rem,3.8vw,3rem);letter-spacing:-.02em;max-width:22
 <div class="mmenu" id="mmenu">
   <a href="platform.html">Platform <i>01</i></a>
   <a href="solutions.html">Solutions <i>02</i></a>
-  <a href="index.html#problem">Why Forge <i>03</i></a>
+  <a href="why.html">Why Forge <i>03</i></a>
   <a href="pricing.html">Pricing <i>04</i></a>
   <a href="company.html">Company <i>05</i></a>
   <div class="mfoot">
@@ -809,218 +808,6 @@ section h1{font-size:clamp(1.9rem,3.8vw,3rem);letter-spacing:-.02em;max-width:22
 </div>
 
 <!-- ============ H1 · HERO ============ -->
-<section class="hero" id="top">
-  <div class="wrap">
-    <div class="hero-grid">
-      <div>
-        <div class="badge glass fade-in" style="animation-delay:.1s"><span class="dot"></span>85% NEVER MAKE A SECOND DEPOSIT</div>
-        <div style="margin-top:26px">
-          <span class="w"><span style="--d:.15s"><em>Pump</em></span></span>
-          <span class="w"><span style="--d:.26s">up</span></span>
-          <span class="w"><span style="--d:.37s">your</span></span>
-          <span class="w"><span style="--d:.48s">players.</span></span>
-        </div>
-        <p class="lede fade-in" style="animation-delay:.7s">A lightweight, plug-and-play prediction widget that keeps your players hot — longer sessions, bigger deposits, more of them coming back. Standalone or data-integrated. Built to break the 85% second-deposit cliff.</p>
-        <div class="hero-actions fade-in" style="animation-delay:.85s">
-          <a href="#cta" class="btn">Book a demo <span class="arc"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6h7M6 2l4 4-4 4" stroke="#C6F048" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
-          <a href="#shift" class="btn ghost">See how it works</a>
-        </div>
-        <div class="trust-row fade-in" style="animation-delay:1s">
-          <span>Longer <b>session time</b></span>
-          <span>Higher <b>deposits</b></span>
-          <span>Lower <b>churn</b></span>
-        </div>
-      </div>
-      <div class="feedwrap fade-in" style="animation-delay:.5s">
-        <div class="halo" aria-hidden="true"></div>
-        <div class="feed glass spot">
-          <div class="fhead"><span class="t">LIVE PREDICTIONS</span><span class="live"><i></i>LIVE</span></div>
-          <div class="frows" id="frows" aria-live="polite"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="marquee" aria-hidden="true">
-    <div class="track">
-      <span>CASINO</span><span>·</span><span>SLOTS</span><span>·</span><span>SPORTS BETTING</span><span>·</span><span>TRADING</span><span>·</span><span>PREDICTION MARKETS</span><span>·</span>
-      <span>CASINO</span><span>·</span><span>SLOTS</span><span>·</span><span>SPORTS BETTING</span><span>·</span><span>TRADING</span><span>·</span><span>PREDICTION MARKETS</span><span>·</span>
-    </div>
-  </div>
-</section>
-
-<!-- ============ H2 · TRUST / METRICS ============ -->
-<section id="trust">
-  <div class="wrap">
-    <p class="eyebrow reveal">Trust</p>
-    <h2 class="reveal">What good looks like.</h2>
-    <div class="reveal" data-stagger style="display:flex;gap:14px;flex-wrap:wrap;margin-top:36px">
-      <span class="chip">Tier-1 sportsbook</span>
-      <span class="chip">Multi-vertical casino group</span>
-      <span class="chip">Emerging trading operator</span>
-      <span class="chip">Prediction-market platform</span>
-    </div>
-    <div class="grid g4 reveal" data-stagger style="margin-top:48px">
-      <div class="stat glass spot"><div class="v">+<span class="count" data-to="31">31</span><span class="u">%</span></div><div class="k">30-day retention</div></div>
-      <div class="stat glass spot"><div class="v"><span class="count" data-to="2.4" data-dec="1">2.4</span><span class="u">&times;</span></div><div class="k">Reactivation rate</div></div>
-      <div class="stat glass spot"><div class="v">&minus;<span class="count" data-to="19">19</span><span class="u">%</span></div><div class="k">Churn, at-risk cohorts</div></div>
-      <div class="stat glass spot"><div class="v">&lt;<span class="count" data-to="1">1</span><span class="u">s</span></div><div class="k">Median latency</div></div>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- ============ H3 · PROBLEM ============ -->
-<section id="problem">
-  <div class="wrap">
-    <p class="eyebrow reveal">The cliff</p>
-    <h2 class="reveal">85% of the players you paid for never make a <em>second deposit</em>.</h2>
-    <p class="lede reveal">You spend to acquire them. They deposit once, take the welcome bonus, and go quiet. Most operators lose around 85% of first-time depositors before the second — the most expensive leak in iGaming.</p>
-    <div class="grid g3 reveal" data-stagger style="margin-top:52px">
-      <div class="card glass spot"><h3>Nothing pulls them back</h3><p>After the bonus there's no reason to return, and a next-day CRM email lands too late to matter.</p></div>
-      <div class="card glass spot"><h3>Gamification they have to learn</h3><p>Wheels, loot boxes and missions add a mechanic the player must figure out. Most never bother.</p></div>
-      <div class="card glass spot"><h3>One-size bonuses</h3><p>The same offer to everyone burns margin and moves no one.</p></div>
-    </div>
-    <div class="chart glass spot reveal" style="margin-top:32px">
-      <div class="ctitle">Where the players go</div>
-      <div class="csub">OF 100 FIRST-TIME DEPOSITORS · INDUSTRY BASELINE</div>
-      <svg viewBox="0 0 900 190" role="img" aria-label="Of 100 first-time depositors, all 100 make a first deposit but only about 15 make a second.">
-        <text class="clabel" x="140" y="62" text-anchor="end">First deposit</text>
-        <rect class="dbar" x="150" y="48" width="700" height="16" rx="8" fill="#FF6A2B" opacity="0.85"/>
-        <text class="cval" x="842" y="42" text-anchor="end" fill="#FFB45C">100</text>
-        <text class="clabel" x="140" y="118" text-anchor="end">Second deposit</text>
-        <rect class="dbar" x="150" y="104" width="105" height="16" rx="8" fill="#C7F23A"/>
-        <text class="cval" x="265" y="117" fill="#C7F23A">~15</text>
-      </svg>
-      <div class="clegend"><span><i style="background:#FF6A2B"></i>85% never return</span><span><i style="background:#C7F23A"></i>~15% reach a second deposit</span></div>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- ============ H3b · BEFORE → AFTER ============ -->
-<section id="shift">
-  <div class="wrap">
-    <p class="eyebrow reveal">Why it works</p>
-    <h2 class="reveal">Predictions are <em>naturally intuitive</em>.</h2>
-    <p class="lede reveal">No setup to learn. No mechanic to figure out. A yes-or-no call the player already knows how to make. The thinking around the next move disappears — so they go on, and on, and on.</p>
-    <div class="grid g4 reveal" data-stagger style="margin-top:48px;gap:18px">
-      <div class="card glass spot"><h3>Yes or no</h3><p>One tap. No rules, no learning curve.</p></div>
-      <div class="card glass spot"><h3>Zero cognitive load</h3><p>Unlike RPG-style gamelets, there's nothing to work out first.</p></div>
-      <div class="card glass spot"><h3>Psychologically committed</h3><p>A live call in the moment keeps them in the seat.</p></div>
-      <div class="card glass spot" style="border-color:rgba(199,242,58,.35)"><h3 class="lime">The pump</h3><p>The window closes. Missing it stings more than losing it.</p></div>
-    </div>
-    <p class="key reveal" style="margin-top:44px">Take the thinking out, and the <em>playing takes care of itself</em>.</p>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- ============ H4 · THE ENGINE ============ -->
-<section id="engine">
-  <div class="wrap">
-    <p class="eyebrow reveal">The engine</p>
-    <h2 class="reveal">One widget on the surface. A <em>1:1 engine</em> underneath.</h2>
-    <p class="lede reveal">Every player sees a simple yes/no call. Behind it, an AI engine reads that player and tailors the next gamelet to them — the question, the odds, the timing.</p>
-    <div class="reveal" style="margin-top:56px">
-      <div class="flow reveal inview" data-stagger>
-        <div class="node glass spot">Player signals<span class="sub">play · deposit · odds · price</span></div>
-        <span class="arr">→</span>
-        <div class="node glass spot ai">Real-time AI engine<span class="sub">reads each player</span></div>
-        <span class="arr">→</span>
-        <div class="node glass spot">Prediction gamelet<span class="sub">tailored question · odds · timing</span></div>
-        <span class="arr">→</span>
-        <div class="node glass spot ledger">Learns &amp; sharpens<span class="sub">every call improves the next</span></div>
-      </div>
-    </div>
-    <div class="reveal" style="margin-top:44px"><a href="platform.html" class="btn ghost">Explore the platform →</a></div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- ============ H5b · OPERATOR CONSOLE ============ -->
-<section id="console">
-  <style>
-    .cons{border-radius:var(--r-lg);overflow:hidden;margin-top:52px}
-    .cons-bar{display:flex;align-items:center;gap:10px;padding:14px 18px;border-bottom:1px solid var(--line-soft);background:rgba(255,255,255,.03)}
-    .cons-bar i{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,.12)}
-    .cons-bar i:nth-child(1){background:var(--ember)}
-    .cons-bar i:nth-child(2){background:var(--amber)}
-    .cons-bar i:nth-child(3){background:var(--lime)}
-    .cons-bar .t{font-family:var(--mono);font-size:10.5px;letter-spacing:.2em;color:var(--muted);margin-left:8px}
-    .cons-bar .eng{margin-left:auto;display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:10px;letter-spacing:.16em;color:var(--lime)}
-    .cons-bar .eng b{width:6px;height:6px;border-radius:50%;background:var(--lime);box-shadow:0 0 8px var(--lime);animation:pulse 1.6s infinite}
-    .cons-body{display:grid;grid-template-columns:210px 1fr;min-height:380px}
-    .cons-side{border-right:1px solid var(--line-soft);padding:18px 0;background:rgba(0,0,0,.25)}
-    .cons-side .grp{font-family:var(--mono);font-size:9px;letter-spacing:.22em;color:var(--faint);padding:10px 20px 6px}
-    .cons-side span{display:block;font-family:var(--mono);font-size:11.5px;color:var(--muted);padding:7px 20px;border-left:2px solid transparent}
-    .cons-side span.on{color:var(--lime);border-left-color:var(--lime);background:rgba(199,242,58,.06)}
-    .cons-main{padding:22px}
-    .cons-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-    .ck{padding:14px 16px;border-radius:var(--r-sm);background:rgba(255,255,255,.04);border:1px solid var(--line-soft)}
-    .ck .kv{font-family:var(--disp);font-weight:700;font-size:1.5rem;letter-spacing:-.02em;color:var(--ink)}
-    .ck .kk{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;color:var(--faint);margin-top:4px;text-transform:uppercase}
-    .cons-pipe{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:18px;padding:14px 16px;border-radius:var(--r-sm);background:rgba(255,255,255,.03);border:1px solid var(--line-soft);font-family:var(--mono);font-size:10.5px;color:var(--muted)}
-    .cons-pipe b{color:var(--ink);font-weight:600}
-    .cons-pipe b.lime{color:var(--lime)}
-    .cons-pipe .pa{color:var(--faint)}
-    .cons-rules{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
-    .crule{font-family:var(--mono);font-size:10px;letter-spacing:.06em;color:var(--lime);padding:6px 12px;border-radius:100px;border:1px solid rgba(199,242,58,.3);background:rgba(199,242,58,.07)}
-    .crule.hot{color:var(--amber);border-color:rgba(255,180,92,.35);background:rgba(255,106,43,.07)}
-    .cons-note{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;margin-top:14px;padding:13px 16px;border-radius:var(--r-sm);background:rgba(255,255,255,.04);border:1px solid var(--line-soft)}
-    .cons-note .ic{width:32px;height:32px;border-radius:9px;display:grid;place-items:center;background:rgba(199,242,58,.1);border:1px solid rgba(199,242,58,.35)}
-    .cons-note .tx{font-size:12.5px;color:var(--muted)}
-    .cons-note .tx b{display:block;color:var(--ink);font-size:13px}
-    .cons-note .st{font-family:var(--mono);font-size:10px;color:var(--lime);white-space:nowrap}
-    @media (max-width:860px){
-      .cons-body{grid-template-columns:1fr}
-      .cons-side{display:flex;flex-wrap:wrap;gap:2px;padding:10px;border-right:0;border-bottom:1px solid var(--line-soft)}
-      .cons-side .grp{width:100%;padding:6px 10px 2px}
-      .cons-side span{padding:6px 10px;border-left:0;border-radius:100px}
-      .cons-side span.on{background:rgba(199,242,58,.1)}
-      .cons-kpis{grid-template-columns:1fr 1fr}
-    }
-  </style>
-  <div class="wrap">
-    <p class="eyebrow reveal">Proof it runs</p>
-    <h2 class="reveal">The console is already <em>live.</em></h2>
-    <p class="lede reveal">Not a roadmap — a running system. This is the operator console as it runs today, with real sandbox traffic flowing through it: three platforms connected, every signal read, calls firing in-session.</p>
-    <div class="cons glass reveal">
-      <div class="cons-bar"><i></i><i></i><i></i><span class="t">FORGE OPERATOR CONSOLE</span><span class="eng"><b></b>ENGINE ACTIVE</span></div>
-      <div class="cons-body">
-        <div class="cons-side" aria-hidden="true">
-          <div class="grp">PLATFORM</div>
-          <span>Dashboard</span><span>Platforms</span><span>Integration</span><span>Engagement</span><span>Event Stream</span><span class="on">Decision Engine</span><span>Notifications</span><span>Analytics</span>
-          <div class="grp">INTELLIGENCE</div>
-          <span>Gamelets</span><span>Market Signals</span><span>Prediction Markets</span><span>Smart Re-engage</span><span>Lead Nurture</span>
-        </div>
-        <div class="cons-main">
-          <div class="cons-kpis">
-            <div class="ck"><div class="kv">100</div><div class="kk">Events today · 9,786 all-time</div></div>
-            <div class="ck"><div class="kv">183</div><div class="kk">Active users · 7 days</div></div>
-            <div class="ck"><div class="kv">417</div><div class="kk">Notifications sent</div></div>
-            <div class="ck"><div class="kv" style="color:var(--lime)">100%</div><div class="kk">Read rate · 414/414</div></div>
-          </div>
-          <div class="cons-pipe"><b>tracker signal</b><span class="pa">→</span><b>event gateway</b><span class="pa">→</span><b class="lime">prediction engine</b><span class="pa">→</span><b>call on_page</b><span class="pa">·</span><span>under 1s end to end</span></div>
-          <div class="cons-rules">
-            <span class="crule">exit_intent</span><span class="crule">first_deposit</span><span class="crule">inactive_login</span><span class="crule">logout_intent</span><span class="crule hot">trade_loss_streak</span><span class="crule">trade_profit</span><span class="crule hot">withdraw_amount</span><span class="crule hot">withdraw_loss_streak</span>
-          </div>
-          <div class="cons-note">
-            <div class="ic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 13l5 5L20 7" stroke="#C7F23A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="tx"><b>Prediction call delivered</b>trigger: user.logout · live socket · presence: on_page</div>
-            <div class="st">SENT + READ</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <p class="mono muted reveal" style="font-size:11px;margin-top:20px">Sandbox figures from the live system · 8 decision rules in production · 3 platforms connected.</p>
-  </div>
-</section>
-<div class="divider"></div>
-
-<!-- ============ H4b · ORIGIN ============ -->
 <section id="origin">
   <div class="wrap">
     <div class="grid g2" style="gap:56px;align-items:center">
@@ -1042,351 +829,6 @@ section h1{font-size:clamp(1.9rem,3.8vw,3rem);letter-spacing:-.02em;max-width:22
 
 <div class="divider"></div>
 
-<!-- ============ H5 · CAPABILITIES BENTO ============ -->
-<section id="capabilities">
-  <div class="wrap">
-    <p class="eyebrow reveal">What it does</p>
-    <h2 class="reveal">One lightweight widget. A lot going on underneath.</h2>
-    <div class="bento reveal" data-stagger style="margin-top:52px">
-      <div class="b glass spot hero-tile">
-        <div class="pulsebg" aria-hidden="true"></div>
-        <span class="tag">ENGINE</span>
-        <div><h3>Real-time 1:1 prediction engine</h3><p>Reads each player and tailors the next gamelet — the question, the odds, the timing — in under a second.</p></div>
-      </div>
-      <div class="b glass spot"><span class="tag">PREDICT</span><div><h3>Prediction gamelets</h3><p>Yes or no. Nothing to learn.</p></div></div>
-      <div class="b glass spot"><span class="tag">PREDICT</span><div><h3>Live mini-bets</h3><p>Short windows on real events.</p></div></div>
-      <div class="b glass spot"><span class="tag">PERSONALIZE</span><div><h3>Per-player tailoring</h3><p>Question, odds and timing, tuned to the player.</p></div></div>
-      <div class="b glass spot"><span class="tag">PERSONALIZE</span><div><h3>Global to hyper-local</h3><p>From a World Cup match to a local news story.</p></div></div>
-      <div class="b glass spot"><span class="tag">REACH</span><div><h3>Multi-vertical</h3><p>A different call for every vertical.</p></div></div>
-      <div class="b glass spot"><span class="tag">TRUST</span><div><h3>Standalone or integrated</h3><p>Run it with 0 PII, or share more.</p></div></div>
-      <div class="b glass spot"><span class="tag">GOVERNANCE</span><div><h3>Responsible-gaming guardrails</h3><p>Limits you set, enforced in real time.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- ============ H6 · MULTI-VERTICAL ============ -->
-<section id="verticals">
-  <div class="wrap">
-    <p class="eyebrow reveal">Prediction on everything</p>
-    <h2 class="reveal">From global events to <em>local news</em> — whatever keeps them playing.</h2>
-    <p class="lede reveal">Forge tailors the call to the player and the moment. A World Cup match, a market tick, a story breaking down the street — the AI picks whatever will keep this player in the seat, and works across your whole book.</p>
-    <div class="reveal" data-stagger style="display:flex;gap:14px;flex-wrap:wrap;margin-top:36px">
-      <span class="chip">Casino</span>
-      <span class="chip">Slots</span>
-      <span class="chip">Sports</span>
-      <span class="chip">Trading</span>
-      <span class="chip">Prediction Markets</span>
-    </div>
-    <div class="reveal" style="margin-top:32px">
-      <div class="moment glass spot">
-        <div class="badge glass"><span class="dot"></span>LIVE · SPORTS</div>
-        <p><b>France v England</b> — will France score in the next 10 minutes? <span class="lime">Yes / No.</span> Live odds. Window: <b>20 seconds</b>.</p>
-      </div>
-      <p class="muted reveal" style="margin-top:20px;max-width:60ch">Miss the window and it's gone until the next one. The fear of missing the call bites harder than losing it — that's the pump. As the match runs, Forge spins up fresh calls tied to what's happening on the pitch.</p>
-    </div>
-
-    <p class="lede reveal" style="margin-top:56px">Forge doesn't translate an experience — it generates one. Every call arrives in the player's own language, and is built from the player's own reality: their city, their weather, their politics, their derby.</p>
-    <div class="grid g2 reveal" data-stagger style="margin-top:32px;gap:22px">
-      <div class="card glass spot"><h3>Native language</h3><p>Every question, nudge and result in English, Arabic, Albanian or any language the player lives in. Not a translation layer: real-time generation in-language.</p></div>
-      <div class="card glass spot" style="border-color:rgba(199,242,58,.35)"><h3 class="lime">Hyper-local predictions</h3><p>Micro-markets generated from each player's surroundings — so the call reads like it was written down the street. Because it was.</p></div>
-    </div>
-    <div class="reveal" style="margin-top:36px">
-      <div class="vtabs glass" id="ntabs" role="tablist" aria-label="Player locales">
-        <button class="vtab active" role="tab" aria-selected="true" data-n="al">&#127462;&#127473; Albanian player</button>
-        <button class="vtab" role="tab" aria-selected="false" data-n="uk">&#127468;&#127463; UK player</button>
-        <button class="vtab" role="tab" aria-selected="false" data-n="ae">&#127462;&#127466; Arabic player</button>
-        <button class="vtab" role="tab" aria-selected="false" data-n="es">&#127466;&#127480; Spanish player</button>
-        <button class="vtab" role="tab" aria-selected="false" data-n="hi">&#127470;&#127475; Indian player</button>
-        <button class="vtab" role="tab" aria-selected="false" data-n="zh">&#127464;&#127475; Chinese player</button>
-      </div>
-      <div class="moment glass spot" style="flex-direction:column;align-items:flex-start;gap:14px">
-        <div class="badge glass"><span class="dot"></span><span id="ntag">LOCAL WEATHER MARKET · ALBANIAN</span></div>
-        <p id="nq" style="font-family:var(--serif);font-style:italic;font-size:clamp(1.15rem,2vw,1.45rem);color:var(--ink)">A do të jetë temperatura në Tiranë mbi 26°C në orën e ardhshme?</p>
-        <p id="ntr" class="mono muted" style="font-size:11px;letter-spacing:.06em">EN · Will the temperature in Tirana be above 26°C in the next hour?</p>
-        <div class="ans"><span class="chip yes" id="nyes">PO</span><span class="chip no" id="nno">JO</span><span class="chip">0.7s · generated for this player</span></div>
-        <div class="ans" style="margin-top:4px"><span class="chip">SPORTS</span><span class="chip">CRYPTO</span><span class="chip">POLITICS</span><span class="chip">FINANCE</span><span class="chip">AI</span><span class="chip">SCIENCE</span><span class="chip" style="color:var(--lime);border-color:rgba(199,242,58,.4)">AI PERSONALISED</span></div>
-      </div>
-    </div>
-  </div>
-  <style>
-    #nq{transition:opacity .3s var(--ease),transform .3s var(--ease)}
-    #nq.swap{opacity:0;transform:translateY(8px)}
-    #verticals .ans{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
-    #verticals .ans .chip{font-size:12px;padding:8px 22px}
-    #verticals .ans .yes{color:var(--lime);border-color:rgba(199,242,58,.4)}
-    #verticals .ans .no{color:var(--amber);border-color:rgba(255,106,43,.35)}
-  </style>
-</section>
-
-<div class="divider"></div>
-
-<!-- ============ H7 · DATA PRIVACY ============ -->
-<section id="privacy" class="ember-em">
-  <div class="wrap">
-    <p class="eyebrow reveal">Two ways to run it</p>
-    <h2 class="reveal">Share <em>nothing</em>, or share more. Your call.</h2>
-    <p class="lede reveal">Standalone, Forge receives no player data at all — 0 PII — and still works from anonymous behavior. Data-integrated, you share what you choose, and every call gets sharper.</p>
-    <div class="ledger-split glass reveal">
-      <div class="side clean"><p class="mono muted" style="font-size:11px;letter-spacing:.1em">STANDALONE</p><h3 style="margin-top:10px">0 PII · drop-in</h3><p class="muted" style="margin-top:8px;font-size:.92rem">Works from anonymous signals only. Nothing to hand over, no access to grant. The lowest-friction way to start.</p></div>
-      <div class="wall" aria-hidden="true"></div>
-      <div class="side forge-side"><p class="mono ember" style="font-size:11px;letter-spacing:.1em">DATA-INTEGRATED</p><h3 style="margin-top:10px" class="ember">Share more, personalize more</h3><p class="muted" style="margin-top:8px;font-size:.92rem">Feed the engine what you choose, and each prediction gets more personal — closer to the player, the moment and the local context.</p></div>
-    </div>
-    <div class="reveal" style="display:flex;align-items:center;gap:20px;margin-top:40px;flex-wrap:wrap">
-      <div class="stat glass spot"><div class="v ember-v">0<span class="u" style="-webkit-text-fill-color:var(--amber);color:var(--amber)"> PII</span></div><div class="k">Personal data fields required to start</div></div>
-      <span class="muted" style="font-size:.95rem">Tweakable to your legal and operational constraints.</span>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- ============ H8 · RESPONSIBLE GAMING ============ -->
-<section id="rg">
-  <div class="wrap">
-    <p class="eyebrow reveal">Wellbeing</p>
-    <h2 class="reveal">The pump has a limit — you set it.</h2>
-    <p class="lede reveal">The same engine that keeps players hot also watches for tilt. Pace, loss-chasing and session length feed the guardrails you configure — and a cool-down fires as fast as any call. Heat that burns players out costs you the second deposit too.</p>
-    <div class="reveal" style="margin-top:44px;max-width:560px">
-      <div class="card glass spot" style="padding:28px">
-        <div style="display:flex;justify-content:space-between;font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.1em;margin-bottom:12px"><span>HEALTHY PLAY</span><span class="lime">MONITORED</span></div>
-        <div class="rgbar"><div></div></div>
-        <p class="muted" style="font-size:.9rem;margin-top:16px">Wellbeing signals ride the same real-time engine — a cool-down nudge fires as fast as any prediction.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- ============ H9 · PROOF ============ -->
-<section id="proof">
-  <div class="wrap">
-    <p class="eyebrow reveal">Outcomes</p>
-    <h2 class="reveal">Cut second-deposit churn from 85% to <em>75%</em>.</h2>
-    <p class="lede reveal">Ten points doesn't sound like much — until you see who's in it. The players you'd have lost include your highest spenders. Retention and revenue aren't linear: a single point of second-deposit retention can carry outsized lifetime value.</p>
-    <div class="grid g4 reveal" data-stagger style="margin-top:52px">
-      <div class="stat glass spot"><div class="v"><span class="count" data-to="75">75</span><span class="u">%</span></div><div class="k">Second-deposit churn — down from 85%</div></div>
-      <div class="stat glass spot"><div class="v"><span class="count" data-to="25">25</span><span class="u">%</span></div><div class="k">Reach a second deposit — up from 15%</div></div>
-      <div class="stat glass spot"><div class="v">+<span>__</span><span class="u">%</span></div><div class="k">Average deposit</div></div>
-      <div class="stat glass spot"><div class="v"><span>__</span><span class="u">×</span></div><div class="k">VIP revenue in the recovered slice</div></div>
-    </div>
-    <div class="chart glass spot reveal" style="margin-top:36px">
-      <div class="ctitle">Second deposits, recovered.</div>
-      <div class="csub">SECOND-DEPOSIT RETENTION OVER TIME · TARGET · ILLUSTRATIVE</div>
-      <svg viewBox="0 0 900 330" role="img" aria-label="With Forge, second-deposit retention keeps climbing; generic gamification and no widget both peak early then decline.">
-        <defs>
-          <linearGradient id="forgeFill" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#C7F23A" stop-opacity="0.20"/><stop offset="100%" stop-color="#C7F23A" stop-opacity="0"/>
-          </linearGradient>
-        </defs>
-        <g stroke="rgba(255,255,255,.05)"><line x1="70" y1="50" x2="860" y2="50"/><line x1="70" y1="115" x2="860" y2="115"/><line x1="70" y1="180" x2="860" y2="180"/></g>
-        <line x1="70" y1="250" x2="860" y2="250" stroke="rgba(255,255,255,.12)"/>
-        <text class="clabel" x="70" y="40" text-anchor="start">player value →</text>
-        <g class="clabel" text-anchor="middle">
-          <text x="70" y="274">start</text><text x="268" y="274">month 3</text><text x="466" y="274">month 6</text><text x="664" y="274">month 9</text><text x="860" y="274">month 12</text>
-        </g>
-        <path class="dline" d="M70 212 L268 168 L466 214 L664 234 L860 242" fill="none" stroke="#2FD4E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
-        <circle cx="860" cy="242" r="4.5" fill="#2FD4E0"/>
-        <text class="cval" x="848" y="262" text-anchor="end" fill="#2FD4E0">no widget</text>
-        <path class="dline" d="M70 210 L268 152 L466 188 L664 214 L860 228" fill="none" stroke="#FF6A2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
-        <circle cx="268" cy="152" r="4" fill="#FF6A2B"/>
-        <text class="clabel" x="268" y="140" text-anchor="middle" fill="#FF6A2B">peaks, then fades</text>
-        <circle cx="860" cy="228" r="5" fill="#FF6A2B"/>
-        <text class="cval" x="848" y="222" text-anchor="end" fill="#FF6A2B">generic gamification</text>
-        <path d="M70 210 L268 160 L466 118 L664 82 L860 56 L860 250 L70 250 Z" fill="url(#forgeFill)"/>
-        <path class="dline" d="M70 210 L268 160 L466 118 L664 82 L860 56" fill="none" stroke="#C7F23A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <circle cx="860" cy="56" r="5.5" fill="#C7F23A"/>
-        <text class="cval" x="848" y="50" text-anchor="end" fill="#C7F23A">with Forge</text>
-      </svg>
-      <div class="clegend"><span><i style="background:#C7F23A"></i>With Forge — second deposits keep climbing</span><span><i style="background:#FF6A2B"></i>Generic gamification — peaks, then fades</span><span><i style="background:#2FD4E0"></i>No widget — fades fastest</span></div>
-    </div>
-    <p class="mono muted reveal" style="font-size:11px;margin-top:24px">Target · illustrative until proven on your data. The 85% second-deposit churn baseline is an industry figure.</p>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- ============ H10 · HOW IT WORKS ============ -->
-<section id="how">
-  <div class="wrap">
-    <p class="eyebrow reveal">Onboarding</p>
-    <h2 class="reveal">Live in weeks, not quarters.</h2>
-    <div class="stepper reveal" data-stagger>
-      <div class="step glass spot"><div class="n">01</div><h3>Connect</h3><p>Drop the widget in — standalone or integrated, via API.</p></div>
-      <div class="step glass spot"><div class="n">02</div><h3>Configure</h3><p>Pick verticals, gamelets and the guardrails you want.</p></div>
-      <div class="step glass spot spark"><div class="n">03</div><h3>Forge</h3><p>Calls go live and the engine self-tunes per player.</p></div>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- ============ ROLLOUT · IMPLEMENTATION WORKFLOW ============ -->
-<section id="rollout">
-  <div class="wrap">
-    <p class="eyebrow reveal">Implementation workflow</p>
-    <h2 class="reveal">Proof first. <em>Pop-ups later.</em></h2>
-    <p class="lede reveal">We never start by showing pop-ups. We measure real user behavior and revenue before any intervention — so every rollout decision is backed by your own data, not promises.</p>
-
-    <div class="rp-steps reveal">
-      <div class="rp-step glass open">
-        <button class="rp-btn" aria-expanded="true">
-          <span class="rp-num">01</span>
-          <span class="rp-head">
-            <span class="rp-tag">1 week – 1 month</span>
-            <span class="rp-title">Baseline tracking</span>
-          </span>
-          <span class="rp-chev">▶</span>
-        </button>
-        <div class="rp-body"><div class="rp-body-in">
-          <p>A lightweight, silent tracking script is installed on your client area — works for both Casino and Trading platforms. No user sees anything yet.</p>
-          <ul>
-            <li>Measures real behavior, engagement and revenue</li>
-            <li>Creates the "before" in your before-and-after data</li>
-          </ul>
-        </div></div>
-      </div>
-
-      <div class="rp-step glass">
-        <button class="rp-btn" aria-expanded="false">
-          <span class="rp-num">02</span>
-          <span class="rp-head">
-            <span class="rp-tag">After the baseline</span>
-            <span class="rp-title">Joint decision meeting</span>
-          </span>
-          <span class="rp-chev">▶</span>
-        </button>
-        <div class="rp-body"><div class="rp-body-in">
-          <p>We analyze the baseline data together with you and decide as partners:</p>
-          <ul>
-            <li>What % of users should receive pop-ups?</li>
-            <li>Which user segments to target first?</li>
-            <li>What volume makes sense, based on real data?</li>
-          </ul>
-        </div></div>
-      </div>
-
-      <div class="rp-step glass">
-        <button class="rp-btn" aria-expanded="false">
-          <span class="rp-num">03</span>
-          <span class="rp-head">
-            <span class="rp-tag">Scale on evidence</span>
-            <span class="rp-title">Controlled &amp; gradual rollout</span>
-          </span>
-          <span class="rp-chev">▶</span>
-        </button>
-        <div class="rp-body"><div class="rp-body-in">
-          <p>We start small, measure results in real time, and scale gradually. Volume only increases when the data clearly shows it's working — protecting your brand at every step.</p>
-        </div></div>
-      </div>
-    </div>
-
-    <div class="rp-result glass reveal">
-      <p class="rk">Clear proof of value with real data — before you commit to larger volumes.</p>
-      <p class="rm">Low risk · High confidence · Data-driven decisions</p>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- ============ PACKAGES · FOUR TIERS ============ -->
-<section id="packages">
-  <div class="wrap">
-    <p class="eyebrow reveal">Package tiers</p>
-    <h2 class="reveal">Start simple. <em>Scale as it works.</em></h2>
-    <p class="lede reveal">Four packages, each building on the last. Tap a tier to see exactly what it adds.</p>
-
-    <div class="rp-scale" role="tablist" aria-label="Package tiers" id="rpScale"><button type="button" role="tab" data-rp="0" aria-selected="false" style="--heat:var(--faint);--heat-glow:rgba(120,132,150,.35)"><span class="num">01</span><span class="nm">Basic Widget</span><span class="bar"></span></button><button type="button" role="tab" data-rp="1" aria-selected="false" style="--heat:var(--cyan);--heat-glow:rgba(47,212,224,.45)"><span class="num">02</span><span class="nm">Widget + Dashboard</span><span class="bar"></span></button><button type="button" role="tab" data-rp="2" aria-selected="false" style="--heat:var(--amber);--heat-glow:rgba(255,180,92,.45)"><span class="num">03</span><span class="nm">+ LLM Translation</span><span class="bar"></span></button><button type="button" role="tab" data-rp="3" aria-selected="true" style="--heat:var(--lime);--heat-glow:rgba(199,242,58,.5)"><span class="num">04</span><span class="nm">Full Package</span><span class="bar"></span></button></div>
-    <div class="rp-ramp" aria-hidden="true"></div>
-    <div id="rpView">
-      <div class="rp-pkg glass" id="rp-panel-0" role="tabpanel" style="--heat:var(--faint);--heat-glow:rgba(120,132,150,.35)">
-        <div class="rp-pkg-head">
-          <h3>01 · Basic Widget</h3>
-          
-          <span class="rp-price">Free / Included</span>
-        </div>
-        <p class="rp-best"><span class="bf">Best for</span>Test the concept with minimal commitment and zero risk.</p>
-        <ul class="rp-feat"><li class="new">Simple, clean pop-up widget<span class="rp-tagnew">new in this tier</span></li></ul>
-        
-        <p class="rp-upnote">Everything here carries forward when you upgrade →</p>
-      </div>
-      <div class="rp-pkg glass" id="rp-panel-1" role="tabpanel" style="--heat:var(--cyan);--heat-glow:rgba(47,212,224,.45)">
-        <div class="rp-pkg-head">
-          <h3>02 · Widget + Dashboard</h3>
-          
-          <span class="rp-price">$985 / month</span>
-        </div>
-        <p class="rp-best"><span class="bf">Best for</span>Clearly understand user behavior and measure real impact.</p>
-        <ul class="rp-feat"><li>Simple, clean pop-up widget</li><li class="new">Full analytics dashboard — see exactly what users are doing<span class="rp-tagnew">new in this tier</span></li><li class="new">Configuration tools<span class="rp-tagnew">new in this tier</span></li></ul>
-        
-        <p class="rp-upnote">Everything here carries forward when you upgrade →</p>
-      </div>
-      <div class="rp-pkg glass" id="rp-panel-2" role="tabpanel" style="--heat:var(--amber);--heat-glow:rgba(255,180,92,.45)">
-        <div class="rp-pkg-head">
-          <h3>03 · + LLM Translation</h3>
-          
-          <span class="rp-price">Contact us for pricing</span>
-        </div>
-        <p class="rp-best"><span class="bf">Best for</span>For international and multi-language player bases.</p>
-        <ul class="rp-feat"><li>Simple, clean pop-up widget</li><li>Full analytics dashboard + configuration tools</li><li class="new">AI language model — automatic translation into each user's preferred language<span class="rp-tagnew">new in this tier</span></li></ul>
-        
-        <p class="rp-upnote">Everything here carries forward when you upgrade →</p>
-      </div>
-      <div class="rp-pkg glass rp-active" id="rp-panel-3" role="tabpanel" style="--heat:var(--lime);--heat-glow:rgba(199,242,58,.5)">
-        <div class="rp-pkg-head">
-          <h3>04 · Full Package</h3>
-          <span class="rp-badge">Recommended</span>
-          <span class="rp-price">Contact us for pricing</span>
-        </div>
-        <p class="rp-best"><span class="bf">Best for</span>Maximum competitive advantage and the highest possible LTV uplift.</p>
-        <ul class="rp-feat"><li>Simple, clean pop-up widget</li><li>Full analytics dashboard + configuration tools</li><li>AI language model — automatic translation per user</li><li class="new">Unique prediction markets built from real user behavior — exclusive markets not available on Polymarket or similar platforms<span class="rp-tagnew">new in this tier</span></li><li class="new">Advanced tools for technology providers with multi-brand portfolios<span class="rp-tagnew">new in this tier</span></li></ul>
-        <div class="rp-extra"><strong>Why Package 4 is different:</strong> custom, exclusive prediction markets built from your users' actual behavior — <em>products competitors cannot copy</em>. For <strong>technology providers and white-label companies</strong>, it adds a differentiated intelligence layer that raises client LTV and retention, making your platform significantly more valuable.</div>
-        
-      </div></div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-
-<!-- ============ H11 · TESTIMONIALS ============ -->
-<section id="voices">
-  <div class="wrap">
-    <p class="eyebrow reveal">Social proof</p>
-    <h2 class="reveal">Operators, in their words.</h2>
-    <div class="grid g3 reveal" data-stagger style="margin-top:48px">
-      <div class="qcard glass spot"><div class="glyph">"</div><p>Players actually tap it — there's nothing to learn, so they just keep going.</p><div class="attr">HEAD OF CRM · MULTI-VERTICAL GROUP</div></div>
-      <div class="qcard glass spot"><div class="glyph">"</div><p>It moved our second deposits, which nothing else we'd tried had done.</p><div class="attr">VP PRODUCT · TIER-1 SPORTSBOOK</div></div>
-      <div class="qcard glass spot"><div class="glyph">"</div><p>We started standalone, shared zero data, and still saw the lift.</p><div class="attr">COO · EMERGING OPERATOR</div></div>
-    </div>
-    <p class="mono muted reveal" style="font-size:11px;margin-top:24px">Placeholder quotes — replaced with approved, anonymised operator quotes at launch.</p>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- ============ H12 · INTEGRATIONS ============ -->
-<section id="integrations">
-  <div class="wrap">
-    <p class="eyebrow reveal">Ecosystem</p>
-    <h2 class="reveal">Plays nicely with your whole stack.</h2>
-    <p class="lede reveal">Standalone needs almost nothing to go live. Odds and price feeds power the live mini-bets, every major messaging channel is supported, and our team handles the heavy lifting.</p>
-    <div class="orbit reveal">
-      <div class="ring" style="width:190px;height:190px"><i></i></div>
-      <div class="ring r2" style="width:310px;height:310px"><i></i></div>
-      <div class="core">FORGE</div>
-      <div class="onode glass" style="top:16px;left:50%;transform:translateX(-50%)">Your platform</div>
-      <div class="onode glass side-r" style="top:50%;right:4%;transform:translateY(-50%)">Email · SMS · push</div>
-      <div class="onode glass" style="bottom:16px;left:50%;transform:translateX(-50%)">Odds &amp; price feeds</div>
-      <div class="onode glass side-l" style="top:50%;left:4%;transform:translateY(-50%)">Instant messaging</div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ H13 · FINAL CTA ============ -->
 <section class="band-cta" id="cta">
   <div class="wrap">
     <div class="cta-panel glass reveal">
@@ -1405,10 +847,10 @@ section h1{font-size:clamp(1.9rem,3.8vw,3rem);letter-spacing:-.02em;max-width:22
       <div class="wm"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2 L20 7 V17 L12 22 L4 17 V7 Z" stroke="#C7F23A" stroke-width="1.6" fill="rgba(199,242,58,.08)"/><path d="M9 15 L12 8 L15 15" stroke="#C7F23A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>FORGE</div>
       <p class="muted" style="margin-top:16px;font-size:.92rem;max-width:26ch">Players, pumped. Second deposits, earned.</p>
     </div>
-    <div><h4>Platform</h4><a href="platform.html">Real-time 1:1 prediction engine</a><a href="platform.html">Prediction gamelets</a><a href="platform.html">Live mini-bets</a><a href="platform.html">Per-player tailoring</a><a href="platform.html">Global to hyper-local</a><a href="platform.html">Standalone or integrated</a><a href="platform.html">Responsible-gaming guardrails</a><a href="platform.html">Integrations</a></div>
-    <div><h4>Solutions</h4><a href="solutions.html">Casino</a><a href="solutions.html">Slots</a><a href="solutions.html">Sports Betting</a><a href="solutions.html">Trading</a><a href="solutions.html">Prediction Markets</a><a href="solutions.html">Native language</a><a href="solutions.html">Hyper-local predictions</a></div>
-    <div><h4>Company</h4><a href="company.html">About</a><a href="index.html#problem">Why Forge</a><a href="pricing.html">Pricing</a><a href="index.html#cta">Contact</a><a href="index.html#cta">Book a demo</a></div>
-    <div><h4>How it works</h4><a href="platform.html#engine">The engine</a><a href="platform.html#console">Operator console</a><a href="platform.html#how">Go live</a><a href="platform.html#rollout">Rollout</a><a href="platform.html#integrations">Integrations</a></div>
+    <div><h4>Platform</h4><a href="platform.html#engine">The engine</a><a href="platform.html#console">Operator console</a><a href="platform.html#how">Go live</a><a href="platform.html#rollout">Rollout</a><a href="platform.html#integrations">Integrations</a><a href="index.html#capabilities">What it does</a><a href="index.html#privacy">Two ways to run it</a><a href="index.html#rg">Responsible gaming</a></div>
+    <div><h4>Solutions</h4><a href="solutions.html">Casino</a><a href="solutions.html">Slots</a><a href="solutions.html">Sports Betting</a><a href="solutions.html">Trading</a><a href="solutions.html">Prediction Markets</a><a href="index.html#verticals">Native language</a><a href="index.html#verticals">Hyper-local predictions</a></div>
+    <div><h4>Company</h4><a href="company.html">About</a><a href="pricing.html">Pricing</a><a href="index.html#cta">Contact</a><a href="index.html#cta">Book a demo</a></div>
+    <div><h4>Why Forge</h4><a href="why.html">The shift</a><a href="index.html#problem">The 85% cliff</a><a href="index.html#shift">Why predictions work</a><a href="index.html#verticals">Prediction on everything</a><a href="index.html#proof">Outcomes</a><a href="index.html#trust">What good looks like</a></div>
   </div>
   <div class="signoff">
     <div class="bigwm" aria-hidden="true">FORGE</div>
@@ -1535,9 +977,9 @@ section h1{font-size:clamp(1.9rem,3.8vw,3rem);letter-spacing:-.02em;max-width:22
     prediction: 'Market swings on a held position → hedging prompt + streak reward, in-session.'
   };
   var vm = document.getElementById('vmoment');
-  document.querySelectorAll('.vtab').forEach(function(tab){
+  if(vm) document.querySelectorAll('#vtabs .vtab').forEach(function(tab){
     tab.addEventListener('click', function(){
-      document.querySelectorAll('.vtab').forEach(function(t){ t.classList.remove('active'); t.setAttribute('aria-selected','false'); });
+      document.querySelectorAll('#vtabs .vtab').forEach(function(t){ t.classList.remove('active'); t.setAttribute('aria-selected','false'); });
       tab.classList.add('active'); tab.setAttribute('aria-selected','true');
       vm.classList.add('swap');
       setTimeout(function(){ vm.textContent = moments[tab.dataset.v]; vm.classList.remove('swap'); }, 280);
@@ -1556,6 +998,7 @@ section h1{font-size:clamp(1.9rem,3.8vw,3rem);letter-spacing:-.02em;max-width:22
     {ic:'💰', t:'Second deposit landed', d:'The player came back', l:'✓'}
   ];
   var rows = document.getElementById('frows'), idx = 0, MAX = 5;
+  if(rows){
   function pushRow(){
     var e = events[idx % events.length]; idx++;
     var div = document.createElement('div');
@@ -1566,6 +1009,7 @@ section h1{font-size:clamp(1.9rem,3.8vw,3rem);letter-spacing:-.02em;max-width:22
   }
   for(var i=0;i<4;i++) pushRow();
   if(!reduced) setInterval(pushRow, 2600);
+  }
 
   /* ---------- mobile menu ---------- */
   var burger = document.getElementById('burger'),

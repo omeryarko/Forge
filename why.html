@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
-<title>Forge — Pump Up Your Players</title>
+<title>Forge — Why Forge</title>
 <meta name="description" content="A lightweight, plug-and-play prediction widget that keeps players playing — longer sessions, bigger deposits, more second deposits. Standalone or data-integrated, 0 PII to start."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"/>
@@ -768,6 +768,10 @@ html.js #rpView .rp-pkg.rp-active{display:block}
 <div class="grain" aria-hidden="true"></div>
 <div class="progress" id="progress"></div>
 
+<style id="page-head">
+section h1{font-size:clamp(1.9rem,3.8vw,3rem);letter-spacing:-.02em;max-width:22ch;line-height:1.08}
+#whyforge{padding-top:clamp(150px,18vh,220px)}
+</style>
 <!-- ============ NAV ============ -->
 <nav class="nav glass" id="nav">
   <a href="index.html" class="wm">
@@ -804,249 +808,33 @@ html.js #rpView .rp-pkg.rp-active{display:block}
 </div>
 
 <!-- ============ H1 · HERO ============ -->
-<section class="hero" id="top">
+<section id="whyforge">
   <div class="wrap">
-    <div class="hero-grid">
-      <div>
-        <div class="badge glass fade-in" style="animation-delay:.1s"><span class="dot"></span>85% NEVER MAKE A SECOND DEPOSIT</div>
-        <h1 style="margin-top:26px">
-          <span class="w"><span style="--d:.15s"><em>Pump</em></span></span>
-          <span class="w"><span style="--d:.26s"><em>up</em></span></span>
-          <span class="w"><span style="--d:.37s">your</span></span>
-          <span class="w"><span style="--d:.48s">players.</span></span>
-        </h1>
-        <p class="lede fade-in" style="animation-delay:.7s">A lightweight, plug-and-play prediction widget that keeps your players hot — longer sessions, bigger deposits, more of them coming back. Standalone or data-integrated. Built to break the 85% second-deposit cliff.</p>
-        <div class="hero-actions fade-in" style="animation-delay:.85s">
-          <a href="#cta" class="btn">Book a demo <span class="arc"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6h7M6 2l4 4-4 4" stroke="#C6F048" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
-          <a href="#shift" class="btn ghost">See how it works</a>
-        </div>
-        <div class="trust-row fade-in" style="animation-delay:1s">
-          <span>Longer <b>session time</b></span>
-          <span>Higher <b>deposits</b></span>
-          <span>Lower <b>churn</b></span>
-        </div>
+    <p class="eyebrow reveal">The shift</p>
+    <h1 class="reveal">From managing engagement by hand — to a system that works while you sleep.</h1>
+    <div class="grid g2 reveal" data-stagger style="margin-top:48px;gap:22px">
+      <div class="card glass spot">
+        <p class="mono muted" style="font-size:11px;letter-spacing:.16em">THE OLD WAY</p>
+        <ul class="tick" style="margin-top:18px">
+          <li>Acquire players mostly through expensive bonuses</li>
+          <li>Deposit once, use the bonus, go quiet</li>
+          <li>Spend more on bonuses to offset the churn</li>
+          <li>Move players between products by chance or manual campaigns</li>
+          <li>Engagement tooling that's either too basic or too manual</li>
+        </ul>
       </div>
-      <div class="feedwrap fade-in" style="animation-delay:.5s">
-        <div class="halo" aria-hidden="true"></div>
-        <div class="feed glass spot">
-          <div class="fhead"><span class="t">LIVE PREDICTIONS</span><span class="live"><i></i>LIVE</span></div>
-          <div class="frows" id="frows" aria-live="polite"></div>
-        </div>
+      <div class="card glass spot" style="border-color:rgba(199,242,58,.35)">
+        <p class="mono lime" style="font-size:11px;letter-spacing:.16em">WITH FORGE</p>
+        <ul class="tick on" style="margin-top:18px">
+          <li>An autonomous Reward &amp; Activation system, not one-time bonuses</li>
+          <li>Relevant predictions and challenges players respond to</li>
+          <li>Players intelligently activated across your whole book</li>
+          <li>The system learns what drives value and adjusts on its own</li>
+          <li>Cross-product play that happens with far less manual work</li>
+        </ul>
       </div>
     </div>
-  </div>
-  <div class="marquee" aria-hidden="true">
-    <div class="track">
-      <span>CASINO</span><span>·</span><span>SLOTS</span><span>·</span><span>SPORTS BETTING</span><span>·</span><span>TRADING</span><span>·</span><span>PREDICTION MARKETS</span><span>·</span>
-      <span>CASINO</span><span>·</span><span>SLOTS</span><span>·</span><span>SPORTS BETTING</span><span>·</span><span>TRADING</span><span>·</span><span>PREDICTION MARKETS</span><span>·</span>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<section id="problem">
-  <div class="wrap">
-    <p class="eyebrow reveal">The cliff</p>
-    <h2 class="reveal">85% of the players you paid for never make a <em>second deposit</em>.</h2>
-    <p class="lede reveal">You spend to acquire them. They deposit once, take the welcome bonus, and go quiet. Most operators lose around 85% of first-time depositors before the second — the most expensive leak in iGaming.</p>
-    <div class="grid g3 reveal" data-stagger style="margin-top:52px">
-      <div class="card glass spot"><h3>Nothing pulls them back</h3><p>After the bonus there's no reason to return, and a next-day CRM email lands too late to matter.</p></div>
-      <div class="card glass spot"><h3>Gamification they have to learn</h3><p>Wheels, loot boxes and missions add a mechanic the player must figure out. Most never bother.</p></div>
-      <div class="card glass spot"><h3>One-size bonuses</h3><p>The same offer to everyone burns margin and moves no one.</p></div>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<section id="capabilities">
-  <div class="wrap">
-    <p class="eyebrow reveal">What it does</p>
-    <h2 class="reveal">One lightweight widget. A lot going on underneath.</h2>
-    <div class="bento reveal" data-stagger style="margin-top:52px">
-      <div class="b glass spot hero-tile">
-        <div class="pulsebg" aria-hidden="true"></div>
-        <span class="tag">ENGINE</span>
-        <div><h3>Real-time 1:1 prediction engine</h3><p>Reads each player and tailors the next gamelet — the question, the odds, the timing — in under a second.</p></div>
-      </div>
-      <div class="b glass spot"><span class="tag">PREDICT</span><div><h3>Prediction gamelets</h3><p>Yes or no. Nothing to learn.</p></div></div>
-      <div class="b glass spot"><span class="tag">PREDICT</span><div><h3>Live mini-bets</h3><p>Short windows on real events.</p></div></div>
-      <div class="b glass spot"><span class="tag">PERSONALIZE</span><div><h3>Per-player tailoring</h3><p>Question, odds and timing, tuned to the player.</p></div></div>
-      <div class="b glass spot"><span class="tag">PERSONALIZE</span><div><h3>Global to hyper-local</h3><p>From a World Cup match to a local news story.</p></div></div>
-      <div class="b glass spot"><span class="tag">REACH</span><div><h3>Multi-vertical</h3><p>A different call for every vertical.</p></div></div>
-      <div class="b glass spot"><span class="tag">TRUST</span><div><h3>Standalone or integrated</h3><p>Run it with 0 PII, or share more.</p></div></div>
-      <div class="b glass spot"><span class="tag">GOVERNANCE</span><div><h3>Responsible-gaming guardrails</h3><p>Limits you set, enforced in real time.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<section id="shift">
-  <div class="wrap">
-    <p class="eyebrow reveal">Why it works</p>
-    <h2 class="reveal">Predictions are <em>naturally intuitive</em>.</h2>
-    <p class="lede reveal">No setup to learn. No mechanic to figure out. A yes-or-no call the player already knows how to make. The thinking around the next move disappears — so they go on, and on, and on.</p>
-    <div class="grid g4 reveal" data-stagger style="margin-top:48px;gap:18px">
-      <div class="card glass spot"><h3>Yes or no</h3><p>One tap. No rules, no learning curve.</p></div>
-      <div class="card glass spot"><h3>Zero cognitive load</h3><p>Unlike RPG-style gamelets, there's nothing to work out first.</p></div>
-      <div class="card glass spot"><h3>Psychologically committed</h3><p>A live call in the moment keeps them in the seat.</p></div>
-      <div class="card glass spot" style="border-color:rgba(199,242,58,.35)"><h3 class="lime">The pump</h3><p>The window closes. Missing it stings more than losing it.</p></div>
-    </div>
-    <p class="key reveal" style="margin-top:44px">Take the thinking out, and the <em>playing takes care of itself</em>.</p>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<section id="verticals">
-  <div class="wrap">
-    <p class="eyebrow reveal">Prediction on everything</p>
-    <h2 class="reveal">From global events to <em>local news</em> — whatever keeps them playing.</h2>
-    <p class="lede reveal">Forge tailors the call to the player and the moment. A World Cup match, a market tick, a story breaking down the street — the AI picks whatever will keep this player in the seat, and works across your whole book.</p>
-    <div class="grid g2 reveal" data-stagger style="margin-top:44px;gap:22px">
-      <div class="card glass spot"><h3>Native language</h3><p>Every question, nudge and result in English, Arabic, Albanian or any language the player lives in. Not a translation layer: real-time generation in-language.</p></div>
-      <div class="card glass spot" style="border-color:rgba(199,242,58,.35)"><h3 class="lime">Hyper-local predictions</h3><p>Micro-markets generated from each player's surroundings — so the call reads like it was written down the street. Because it was.</p></div>
-    </div>
-    <div class="reveal" style="margin-top:36px">
-      <div class="vtabs glass" id="ntabs" role="tablist" aria-label="Player locales">
-        <button class="vtab active" role="tab" aria-selected="true" data-n="uk">&#127468;&#127463; UK player</button>
-        <button class="vtab" role="tab" aria-selected="false" data-n="es">&#127466;&#127480; Spanish player</button>
-        <button class="vtab" role="tab" aria-selected="false" data-n="hi">&#127470;&#127475; Indian player</button>
-        <button class="vtab" role="tab" aria-selected="false" data-n="zh">&#127464;&#127475; Chinese player</button>
-        <button class="vtab" role="tab" aria-selected="false" data-n="al">&#127462;&#127473; Albanian player</button>
-        <button class="vtab" role="tab" aria-selected="false" data-n="ae">&#127462;&#127466; Arabic player</button>
-      </div>
-      <div class="moment glass spot" style="flex-direction:column;align-items:flex-start;gap:14px">
-        <div class="badge glass"><span class="dot"></span><span id="ntag">LOCAL POLITICS MARKET · ENGLISH</span></div>
-        <p id="nq" style="font-family:var(--serif);font-style:italic;font-size:clamp(1.15rem,2vw,1.45rem);color:var(--ink)">Will Farage poll above 33% this week?</p>
-        <p id="ntr" class="mono muted" style="font-size:11px;letter-spacing:.06em">Generated from this player&rsquo;s home feed · UK polling</p>
-        <div class="ans"><span class="chip yes" id="nyes">YES</span><span class="chip no" id="nno">NO</span><span class="chip">0.7s · generated for this player</span></div>
-        <div class="ans" style="margin-top:4px"><span class="chip">SPORTS</span><span class="chip">CRYPTO</span><span class="chip">POLITICS</span><span class="chip">FINANCE</span><span class="chip">AI</span><span class="chip">SCIENCE</span><span class="chip" style="color:var(--lime);border-color:rgba(199,242,58,.4)">AI PERSONALISED</span></div>
-      </div>
-    </div>
-  </div>
-  <style>
-    #nq{transition:opacity .3s var(--ease),transform .3s var(--ease)}
-    #nq.swap{opacity:0;transform:translateY(8px)}
-    #verticals .ans{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
-    #verticals .ans .chip{font-size:12px;padding:8px 22px}
-    #verticals .ans .yes{color:var(--lime);border-color:rgba(199,242,58,.4)}
-    #verticals .ans .no{color:var(--amber);border-color:rgba(255,106,43,.35)}
-  </style>
-</section>
-
-<div class="divider"></div>
-
-<section id="rg">
-  <div class="wrap">
-    <p class="eyebrow reveal">Wellbeing</p>
-    <h2 class="reveal">The pump has a limit — you set it.</h2>
-    <p class="lede reveal">The same engine that keeps players hot also watches for tilt. Pace, loss-chasing and session length feed the guardrails you configure — and a cool-down fires as fast as any call. Heat that burns players out costs you the second deposit too.</p>
-    <div class="reveal" style="margin-top:44px;max-width:560px">
-      <div class="card glass spot" style="padding:28px">
-        <div style="display:flex;justify-content:space-between;font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.1em;margin-bottom:12px"><span>HEALTHY PLAY</span><span class="lime">MONITORED</span></div>
-        <div class="rgbar"><div></div></div>
-        <p class="muted" style="font-size:.9rem;margin-top:16px">Wellbeing signals ride the same real-time engine — a cool-down nudge fires as fast as any prediction.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<section id="privacy" class="ember-em">
-  <div class="wrap">
-    <p class="eyebrow reveal">Two ways to run it</p>
-    <h2 class="reveal">Share <em>nothing</em>, or share more. Your call.</h2>
-    <p class="lede reveal">Standalone, Forge receives no player data at all — 0 PII — and still works from anonymous behavior. Data-integrated, you share what you choose, and every call gets sharper.</p>
-    <div class="ledger-split glass reveal">
-      <div class="side clean"><p class="mono muted" style="font-size:11px;letter-spacing:.1em">STANDALONE</p><h3 style="margin-top:10px">0 PII · drop-in</h3><p class="muted" style="margin-top:8px;font-size:.92rem">Works from anonymous signals only. Nothing to hand over, no access to grant. The lowest-friction way to start.</p></div>
-      <div class="wall" aria-hidden="true"></div>
-      <div class="side forge-side"><p class="mono ember" style="font-size:11px;letter-spacing:.1em">DATA-INTEGRATED</p><h3 style="margin-top:10px" class="ember">Share more, personalize more</h3><p class="muted" style="margin-top:8px;font-size:.92rem">Feed the engine what you choose, and each prediction gets more personal — closer to the player, the moment and the local context.</p></div>
-    </div>
-    <div class="reveal" style="display:flex;align-items:center;gap:20px;margin-top:40px;flex-wrap:wrap">
-      <div class="stat glass spot"><div class="v ember-v">0<span class="u" style="-webkit-text-fill-color:var(--amber);color:var(--amber)"> PII</span></div><div class="k">Personal data fields required to start</div></div>
-      <span class="muted" style="font-size:.95rem">Tweakable to your legal and operational constraints.</span>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<section id="proof">
-  <div class="wrap">
-    <p class="eyebrow reveal">Outcomes</p>
-    <h2 class="reveal">Cut second-deposit churn from 85% to <em>75%</em>.</h2>
-    <p class="lede reveal">Ten points doesn't sound like much — until you see who's in it. The players you'd have lost include your highest spenders. Retention and revenue aren't linear: a single point of second-deposit retention can carry outsized lifetime value.</p>
-    <div class="chart glass spot reveal" style="margin-top:36px">
-      <div class="ctitle">Second deposits, recovered.</div>
-      <div class="csub">SECOND-DEPOSIT RETENTION OVER TIME · TARGET · ILLUSTRATIVE</div>
-      <svg viewBox="0 0 900 330" role="img" aria-label="With Forge, second-deposit retention keeps climbing; generic gamification and no widget both peak early then decline.">
-        <defs>
-          <linearGradient id="forgeFill" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#C7F23A" stop-opacity="0.20"/><stop offset="100%" stop-color="#C7F23A" stop-opacity="0"/>
-          </linearGradient>
-        </defs>
-        <g stroke="rgba(255,255,255,.05)"><line x1="70" y1="50" x2="860" y2="50"/><line x1="70" y1="115" x2="860" y2="115"/><line x1="70" y1="180" x2="860" y2="180"/></g>
-        <line x1="70" y1="250" x2="860" y2="250" stroke="rgba(255,255,255,.12)"/>
-        <text class="clabel" x="70" y="40" text-anchor="start">player value →</text>
-        <g class="clabel" text-anchor="middle">
-          <text x="70" y="274">start</text><text x="268" y="274">month 3</text><text x="466" y="274">month 6</text><text x="664" y="274">month 9</text><text x="860" y="274">month 12</text>
-        </g>
-        <path class="dline" d="M70 212 L268 168 L466 214 L664 234 L860 242" fill="none" stroke="#2FD4E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
-        <circle cx="860" cy="242" r="4.5" fill="#2FD4E0"/>
-        <text class="cval" x="848" y="262" text-anchor="end" fill="#2FD4E0">no widget</text>
-        <path class="dline" d="M70 210 L268 152 L466 188 L664 214 L860 228" fill="none" stroke="#FF6A2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
-        <circle cx="268" cy="152" r="4" fill="#FF6A2B"/>
-        <text class="clabel" x="268" y="140" text-anchor="middle" fill="#FF6A2B">peaks, then fades</text>
-        <circle cx="860" cy="228" r="5" fill="#FF6A2B"/>
-        <text class="cval" x="848" y="222" text-anchor="end" fill="#FF6A2B">generic gamification</text>
-        <path d="M70 210 L268 160 L466 118 L664 82 L860 56 L860 250 L70 250 Z" fill="url(#forgeFill)"/>
-        <path class="dline" d="M70 210 L268 160 L466 118 L664 82 L860 56" fill="none" stroke="#C7F23A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <circle cx="860" cy="56" r="5.5" fill="#C7F23A"/>
-        <text class="cval" x="848" y="50" text-anchor="end" fill="#C7F23A">with Forge</text>
-      </svg>
-      <div class="clegend"><span><i style="background:#C7F23A"></i>With Forge — second deposits keep climbing</span><span><i style="background:#FF6A2B"></i>Generic gamification — peaks, then fades</span><span><i style="background:#2FD4E0"></i>No widget — fades fastest</span></div>
-    </div>
-    <p class="mono muted reveal" style="font-size:11px;margin-top:24px">Target · illustrative until proven on your data. The 85% second-deposit churn baseline is an industry figure.</p>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<section id="trust">
-  <div class="wrap">
-    <p class="eyebrow reveal">Trust</p>
-    <h2 class="reveal">What good looks like.</h2>
-    <div class="reveal" data-stagger style="display:flex;gap:14px;flex-wrap:wrap;margin-top:36px">
-      <span class="chip">Tier-1 sportsbook</span>
-      <span class="chip">Multi-vertical casino group</span>
-      <span class="chip">Emerging trading operator</span>
-      <span class="chip">Prediction-market platform</span>
-    </div>
-    <div class="grid g4 reveal" data-stagger style="margin-top:48px">
-      <div class="stat glass spot"><div class="v">+<span class="count" data-to="31">31</span><span class="u">%</span></div><div class="k">30-day retention</div></div>
-      <div class="stat glass spot"><div class="v"><span class="count" data-to="2.4" data-dec="1">2.4</span><span class="u">&times;</span></div><div class="k">Reactivation rate</div></div>
-      <div class="stat glass spot"><div class="v">&minus;<span class="count" data-to="19">19</span><span class="u">%</span></div><div class="k">Churn, at-risk cohorts</div></div>
-      <div class="stat glass spot"><div class="v">&lt;<span class="count" data-to="1">1</span><span class="u">s</span></div><div class="k">Median latency</div></div>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<section id="voices">
-  <div class="wrap">
-    <p class="eyebrow reveal">Social proof</p>
-    <h2 class="reveal">Operators, in their words.</h2>
-    <div class="grid g3 reveal" data-stagger style="margin-top:48px">
-      <div class="qcard glass spot"><div class="glyph">"</div><p>Players actually tap it — there's nothing to learn, so they just keep going.</p><div class="attr">HEAD OF CRM · MULTI-VERTICAL GROUP</div></div>
-      <div class="qcard glass spot"><div class="glyph">"</div><p>It moved our second deposits, which nothing else we'd tried had done.</p><div class="attr">VP PRODUCT · TIER-1 SPORTSBOOK</div></div>
-      <div class="qcard glass spot"><div class="glyph">"</div><p>We started standalone, shared zero data, and still saw the lift.</p><div class="attr">COO · EMERGING OPERATOR</div></div>
-    </div>
-    <p class="mono muted reveal" style="font-size:11px;margin-top:24px">Placeholder quotes — replaced with approved, anonymised operator quotes at launch.</p>
+    <p class="key reveal" style="margin-top:44px">The shift is from <em>managing</em> player engagement to having a system that actively works to improve it.</p>
   </div>
 </section>
 
